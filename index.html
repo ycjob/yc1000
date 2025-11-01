@@ -1036,6 +1036,40 @@ hr {
     transform: translateY(0);
 }
 
+/* Q-Net 바로가기 버튼 스타일 */
+.qnet-link-button {
+    background: linear-gradient(135deg, #e53935 0%, #ff6b6b 100%);
+    color: #fff;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 12px rgba(229, 57, 53, 0.3);
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.qnet-link-button i {
+    font-size: 1.1rem;
+}
+
+.qnet-link-button:hover {
+    background: linear-gradient(135deg, #c62828 0%, #e53935 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(229, 57, 53, 0.4);
+    color: #fff;
+}
+
+.qnet-link-button:active {
+    transform: translateY(0);
+}
+
     </style>
 </head>
 <body>
@@ -1078,7 +1112,7 @@ hr {
                     <h1 class="hero-title">영천중장비운전학원</h1>
                     <div class="hero-subtitle">
                         <p>🎯 최단시간 자격증 취득!!</p>
-                        <p>👉 지게차(속성) 토요일반(3일)</p>
+                        <p>👉지게차(속성) 토토토(3일)</p>
                         <p>👍 합격률 90%(이상)</p>
                         <p>⚡ 3일만 투자해 보세요!</p>
                     </div>
@@ -1296,6 +1330,12 @@ hr {
             <h1 class="fancy-title"><i class="fas fa-pencil-alt"></i>검정(상시) 필기/실기-일정</h1>
 
             <div class="content-section">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <a href="https://www.q-net.or.kr/" target="_blank" rel="noopener noreferrer" class="qnet-link-button">
+                        <i class="fas fa-external-link-alt"></i>
+                        Q-Net 바로가기 (www.q-net.or.kr)
+                    </a>
+                </div>
                 <div class="image-box">
                     <img src="schedule-img/schedule-2.png" alt="검정일정 이미지">
                 </div>
