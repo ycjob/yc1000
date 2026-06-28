@@ -1,0 +1,31 @@
+{
+  "updatedAt": "2026-06-28",
+  "categories": [
+    { "id": "all", "label": "전체" },
+    { "id": "equipment", "label": "교육장비" },
+    { "id": "yard", "label": "실습장" },
+    { "id": "academy", "label": "강의장/학원" }
+  ],
+  "items": [
+    { "file": "images/30d-9b.webp", "title": "지게차 3톤 · HYUNDAI 30D-9B", "category": "equipment" },
+    { "file": "images/30d-9s.webp", "title": "지게차 3톤 · HYUNDAI 30D-9S", "category": "equipment" },
+    { "file": "images/35dn-9v.webp", "title": "지게차 3.5톤 · HYUNDAI 35DN-9V", "category": "equipment" },
+    { "file": "images/doosan-DX140W.webp", "title": "굴착기 · DOOSAN DX140W", "category": "equipment" },
+    { "file": "images/hyundai-DX140W.webp", "title": "굴착기 · HYUNDAI 140W", "category": "equipment" },
+    { "file": "images/samsung-SL10.webp", "title": "로더 · SAMSUNG SL10", "category": "equipment" },
+    { "file": "images/volvo-mini.webp", "title": "미니 굴착기 · VOLVO", "category": "equipment" },
+    { "file": "images/Facilities-17.webp", "title": "실습장 입구", "category": "yard" },
+    { "file": "images/Facilities-18.webp", "title": "실습장 주행 트랙", "category": "yard" },
+    { "file": "images/Facilities-10.webp", "title": "실습장 전경", "category": "yard" },
+    { "file": "images/Facilities-11.webp", "title": "굴착기 실습 구역", "category": "yard" },
+    { "file": "images/Facilities-12.webp", "title": "실습장 휴게 공간", "category": "yard" },
+    { "file": "images/Facilities-1.webp", "title": "학원 외관", "category": "academy" },
+    { "file": "images/Facilities-2.webp", "title": "학원 입구", "category": "academy" },
+    { "file": "images/Facilities-3.webp", "title": "이론 강의실", "category": "academy" },
+    { "file": "images/Facilities-4.webp", "title": "운전 시뮬레이터실", "category": "academy" },
+    { "file": "images/Facilities-13.webp", "title": "수료식장", "category": "academy" },
+    { "file": "images/Facilities-14.webp", "title": "주차 공간", "category": "academy" },
+    { "file": "images/Facilities-15.webp", "title": "오시는길 안내판", "category": "academy" },
+    { "file": "images/Facilities-16.webp", "title": "오시는길 표지판", "category": "academy" }
+  ]
+}
