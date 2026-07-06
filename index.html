@@ -160,16 +160,28 @@ section{padding:90px 0;}
 .course-loading{padding:60px 0; text-align:center; color:var(--steel-600); font-size:0.95rem;}
 
 /* tabs */
-.course-tabs{display:flex; gap:10px; margin-bottom:32px; flex-wrap:wrap;}
+.course-tabs{
+  display:flex; gap:0; margin-bottom:36px; flex-wrap:wrap;
+  background:var(--paper-dim); border-radius:5px; padding:4px; width:fit-content;
+}
 .course-tab{
   font-family:'Oswald',sans-serif; font-weight:600; font-size:0.92rem; letter-spacing:0.02em;
-  padding:12px 22px; border-radius:3px; border:1.5px solid var(--paper-dim);
-  background:#fff; color:var(--steel-600); cursor:pointer; transition:all .2s;
+  padding:12px 26px; border-radius:4px; border:none;
+  background:transparent; color:var(--steel-600); cursor:pointer;
+  transition:all .22s; position:relative;
+}
+.course-tab::after{
+  content:''; position:absolute; bottom:6px; left:50%; transform:translateX(-50%);
+  width:0; height:2px; background:var(--safety-yellow); border-radius:2px;
+  transition:width .22s ease;
 }
 .course-tab.active{
-  background:var(--steel-900); border-color:var(--steel-900); color:var(--safety-yellow);
+  background:#fff; color:var(--steel-900);
+  box-shadow:0 2px 8px rgba(21,23,26,0.12);
 }
-.course-tab:hover:not(.active){border-color:var(--steel-600); color:var(--steel-900);}
+.course-tab.active::after{ width:60%; }
+.course-tab:hover:not(.active){ color:var(--steel-900); background:rgba(255,255,255,0.5); }
+.course-tab:hover:not(.active)::after{ width:40%; }
 
 /* panel */
 .course-panel-head{margin-bottom:22px;}
@@ -346,8 +358,8 @@ footer{background:var(--steel-900); color:var(--steel-300); padding:56px 0 28px;
   .burger{display:flex;}
   .nav-cta{display:none;}
   .hero{padding:130px 0 60px;}
-  .course-tabs{gap:8px;}
-  .course-tab{padding:10px 16px; font-size:0.85rem; flex:1; text-align:center;}
+  .course-tabs{width:100%; box-sizing:border-box;}
+  .course-tab{padding:11px 14px; font-size:0.85rem; flex:1; text-align:center;}
   .sched-foot{flex-direction:column; align-items:flex-start; gap:4px;}
   .foot-grid{grid-template-columns:1fr;}
   .foot-bottom{flex-direction:column;}
@@ -400,14 +412,14 @@ footer{background:var(--steel-900); color:var(--steel-300); padding:56px 0 28px;
     <div>
       <div class="eyebrow">영천교육청 등록 제346호 · 중장비 운전 전문교육</div>
       <h1>두 손으로 익히는<br>중장비 운전,<br><span class="hl">영천중장비운전학원</span></h1>
-      <p>지게차·굴착기 운전 자격증 취득을 위한 실전 교육. 국비지원과 일반과정 모두 운영하며, 평일·토요일·일요일 집중반으로 누구나 시작할 수 있습니다.</p>
+      <p>국비지원 (무시험)소형지게차 2일 완성 · 지게차(3일 속성) 굴착기(5일 속성) 자격증 취득을 위한 실전 교육, 평일·토요일·일요일 집중반으로 누구나 시작할 수 있습니다.</p>
       <div class="hero-ctas">
         <a href="#course" class="btn btn-primary">교육과정 보기</a>
         <a href="#location" class="btn btn-ghost">오시는길</a>
       </div>
     </div>
     <div class="gauge-panel">
-      <div class="gauge-row"><span class="gauge-label">운영 자격</span><span class="gauge-value on">영천교육청 제346호</span></div>
+      <div class="gauge-row"><span class="gauge-label">본원 강점</span><span class="gauge-value on">속성 취득 전문학원</span></div>
       <div class="gauge-row"><span class="gauge-label">교육 트랙</span><span class="gauge-value">지게차 · 굴착기· 로더</span></div>
       <div class="gauge-row"><span class="gauge-label">운영 방식</span><span class="gauge-value">국비지원 / 일반과정</span></div>
       <div class="gauge-row"><span class="gauge-label">개설 일정</span><span class="gauge-value on">평일 · 토요일 · 일요일</span></div>
