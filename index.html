@@ -412,14 +412,14 @@ footer{background:var(--steel-900); color:var(--steel-300); padding:56px 0 28px;
     <div>
       <div class="eyebrow">영천교육청 등록 제346호 · 중장비 운전 전문교육</div>
       <h1>두 손으로 익히는<br>중장비 운전,<br><span class="hl">영천중장비운전학원</span></h1>
-      <p>국비지원 (무시험)소형지게차 2일 완성 · 지게차(3일 속성) 굴착기(5일 속성) 자격증 취득을 위한 실전 교육, 평일·토요일·일요일 집중반으로 누구나 시작할 수 있습니다.</p>
+      <p>지게차·굴착기 운전 자격증 취득을 위한 실전 교육. 국비지원과 일반과정 모두 운영하며, 평일·토요일·일요일 집중반으로 누구나 시작할 수 있습니다.</p>
       <div class="hero-ctas">
         <a href="#course" class="btn btn-primary">교육과정 보기</a>
         <a href="#location" class="btn btn-ghost">오시는길</a>
       </div>
     </div>
     <div class="gauge-panel">
-      <div class="gauge-row"><span class="gauge-label">본원 강점</span><span class="gauge-value on">속성 취득 전문학원</span></div>
+      <div class="gauge-row"><span class="gauge-label">운영 자격</span><span class="gauge-value on">영천교육청 제346호</span></div>
       <div class="gauge-row"><span class="gauge-label">교육 트랙</span><span class="gauge-value">지게차 · 굴착기· 로더</span></div>
       <div class="gauge-row"><span class="gauge-label">운영 방식</span><span class="gauge-value">국비지원 / 일반과정</span></div>
       <div class="gauge-row"><span class="gauge-label">개설 일정</span><span class="gauge-value on">평일 · 토요일 · 일요일</span></div>
@@ -745,7 +745,7 @@ footer{background:var(--steel-900); color:var(--steel-300); padding:56px 0 28px;
     });
   }
 
-  fetch('facility.json')
+  fetch('facility.json?v=' + Date.now())
     .then(res => { if(!res.ok) throw new Error('not found'); return res.json(); })
     .then(data => {
       facilityData = data;
@@ -764,7 +764,7 @@ footer{background:var(--steel-900); color:var(--steel-300); padding:56px 0 28px;
     if(e.target.id === 'lightbox') document.getElementById('lightbox').classList.remove('open');
   });
 
-  fetch('courses.json')
+  fetch('courses.json?v=' + Date.now())
     .then(res => { if(!res.ok) throw new Error('not found'); return res.json(); })
     .then(data => {
       coursesData = data;
@@ -793,7 +793,7 @@ footer{background:var(--steel-900); color:var(--steel-300); padding:56px 0 28px;
     `;
   }
 
-  fetch('exam-schedule.json')
+  fetch('exam-schedule.json?v=' + Date.now())
     .then(res => { if(!res.ok) throw new Error('not found'); return res.json(); })
     .then(data => {
       if(data.notice){
